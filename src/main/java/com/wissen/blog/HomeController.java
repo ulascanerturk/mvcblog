@@ -59,7 +59,7 @@ public class HomeController {
 	public String admin(Model model, HttpServletRequest req, HttpServletResponse res, @RequestParam String email,
 			@RequestParam String password) {
 		String path = "login";
-		if (email.equals("cagri@cagri.com") && password.equals("1234")) {
+		if (email.equals("admin") && password.equals("admin")) {
 			req.getSession().setAttribute("id", true);
 			path = "redirect:/";
 		} else {
